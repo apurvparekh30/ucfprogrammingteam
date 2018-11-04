@@ -1,0 +1,17 @@
+
+The problem composition had an inconsistent input specification for the judge data.
+For the practice on 2017 Oct 14th, the input data was edited to remove cases with numbers > 1000.
+The output was correspondingly updated to remove those cases.
+These files are in the composition-reduced directory.
+The spec has now been corrected and original data is in data/composition/
+
+The problem statement for newdeal was revised after being used in the practice on 2017 Oct 14th.
+The old pdf is in the newdeal-fix directory for reference, as is the Word doc of the fixed version.
+The new pdf is problems/newdeal.pdf.
+
+The problem tadpole had an incorrect solution, and (consistenly) incorrect judge output for the second case.
+More specifically, the solution says that the second test case has an answer of 1 but I think the real answer is 2.
+The two frogs at (-38, 6) and (-33, 7) could be caught with net of diameter 7 so I think it would be 2, not 1.
+The old solution and data are in tadpole-fix directory for references.
+The new (fixed) solution and data are in the respective solution and data directories for future use.
+
