@@ -1,50 +1,109 @@
 import java.util.*;
 import java.io.*;
 
-class newdeal {
+class cubes {
 
     static FastReader fs = new FastReader();
-    static int k, T;
-    static int[] bx;
-    static int negs,pos;
-    static Boolean memo[][];
 
-    static Boolean rec(int idx,int sum){
-        if(sum == T)
-            return true;
-        if(idx == k)
-            return false;
-        if(memo[idx][sum+negs]!=null)
-            return memo[idx][sum+negs];
-        boolean res = rec(idx+1,sum+bx[idx]) || rec(idx+1,sum);
-        return memo[idx][sum+negs] = res;
-    }
+    static int n;
+    static String[] words;
+    static char[] sol;
+    static TreeSet<Character> hs;
+    static char unused;
+    static Character[] used;
+
+    static int nDice;
+    static final int SIDES = 6;
+    static int nch;
+    static boolean inSame[][];
+
+    static int nmask;
     
+    static final int FIRST = 'A', LAST = 'Z';
+
+
+    static boolean valid(ArrayList<Character> al){
+        for(int i=0;i<al.size();i++){
+            char a = al.get(i);
+            for(int j=i+1;j<al.size();j++){
+                char b = al.get(j);
+                if(inSame[a][b] || inSame[b][a])
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    static ArrayList<Character> getList(int mask){
+        ArrayList<Character> al = new ArrayList<Character>();
+        for(int i=0;i<nch;i++){
+            if((mask & (1<<i))!=0){
+                al.add(used[i]);
+            }
+        }
+        return al;
+    }
+
+
+    static boolean rec(int currMask,int pos,ArrayList<Character> ans){
+        if(currMask == 0){
+            /// print
+            for(char c:ans){
+                System.out.print(c);
+            }
+            System.out.println();
+            return true;
+        }
+        for(int mask = 1;mask<=currMask;mask++){
+            int bits = Integer.bitCount(mask);
+            if(bits!=SIDES || (mask|currMask)!=currMask)
+                continue;
+            ArrayList<Character> lst = getList(mask);
+            //System.out.println(lst);
+            if(valid(lst)){
+                //System.out.println(ans.toString());
+                ans.addAll(pos, lst);
+
+                if(rec(currMask-mask,pos+SIDES,ans)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
     public static void main(String[] args) {
-        int tc = fs.nextInt();
-        for(int t=1;t<=tc;t++){
-            k = fs.nextInt();
-            bx = new int[k];
-            pos = 0;
-            negs = 0;
-            for(int i=0;i<k;i++){
-                bx[i] = fs.nextInt();
-                if(bx[i] > 0)
-                    pos+=bx[i];
-                if(bx[i] < 0)
-                    negs-=bx[i];
+        while (true) {
+            n = fs.nextInt();
+            if (n == 0)
+                break;
+            unused = fs.next().charAt(0);
+            words = new String[n];
+            hs = new TreeSet<Character>();
+            inSame = new boolean[LAST+1][LAST+1];
+            for(int i=0;i<n;i++){
+                words[i] = fs.next();
             }
-            T = fs.nextInt();
-            memo = new Boolean[k][negs+pos+1];
-
-            //Arrays.sort(bx,Collections.reverseOrder());
-            //System.out.println(Arrays.toString(bx));
-
-            if(rec(0,0))
-                System.out.println("Test case #"+t+": You can hit the target "+T+" and win $10M!");
-            else
-                System.out.println("Test case #"+t+": You can not hit the target "+T+", sorry!");
+            nDice = words[0].length();
+            for(int i=0;i<n;i++){
+                for(int j=0;j<nDice-1;j++){
+                    char ch1 = words[i].charAt(j);
+                    hs.add(ch1);
+                    for(int k=j+1;k<nDice;k++){
+                        char ch2 = words[i].charAt(k);
+                        hs.add(ch2);
+                        inSame[ch1][ch2] = inSame[ch2][ch1] = true;
+                    }
+                }
+            }
+            if(unused != '-')
+                hs.add(unused);
+            nch = hs.size();
+            used = hs.toArray(new Character[0]);
+            System.out.println(used.length);
+            nmask = (1<<nch)-1;
+            rec(nmask,0,new ArrayList<Character>());
         }
     }
 
