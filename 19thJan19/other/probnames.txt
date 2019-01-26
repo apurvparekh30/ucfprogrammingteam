@@ -1,0 +1,10 @@
+### escapes required: \! \$ \' \" \& \{ \[
+acm="ACM Contest Scoring"  \
+agglomerator="The Agglomerator"  \
+dancerecital="Dance Recital"  \
+hidden="Hidden Password"  \
+kitchen="Kitchen Measurements"  \
+lineup="Line Them Up"  \
+mosaic="Mosaic"  \
+pyro="Pyro Tubes"  \
+wordclouds="Word Clouds Revisited"  \
