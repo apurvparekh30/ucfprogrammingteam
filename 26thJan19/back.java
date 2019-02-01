@@ -1,83 +1,55 @@
-import java.util.*;
-import java.io.*;
-
-class prob10{
-    static FastReader fs = new FastReader();
-    static int []set;
-    static int [][]memo;
-    static int []arr;
-    static int []arrs;
-    static int target;
-    static HashMap<Integer,Integer> hm;
-
-    static int dp(int idx,int sum){
-        if(idx >= 100)
-            return 0;
-        if(sum > target)
-            return 0;
-        if(sum == target)
-            return 1;
-        if(memo[idx][sum]!=0)
-            return memo[idx][sum];
-        memo[idx][sum] = dp(idx+1,sum);
-        memo[idx][sum] +=dp(idx+2,sum+set[idx]);
-        return memo[idx][sum];
-    }
-    public static void main(String[] args) {
-        set = new int[100];
-        for(int i=1;i<=100;i++){
-            set[i-1] = i*i;
-        }
-        arr = new int[k+1];
-        arrs = new int[k+1];
-        int k = fs.nextInt();
-        for(int i=1;i<=k;i++){
-            arr[i] = fs.nex
-        }
-
-        memo = new int[100][10001];
-            target = fs.nextInt();
-            System.out.println(dp(0,0));
-    }
-    static class FastReader {
-        BufferedReader br;
-        StringTokenizer st;
+while(!ad.isEmpty()) {
+    String curr = ad.poll();
     
-        public FastReader() {
-            br = new BufferedReader(new InputStreamReader(System.in));
-        }
+//				System.out.println(table(curr));
     
-        String next() {
-            while (st == null || !st.hasMoreElements()) {
-                try {
-                    st = new StringTokenizer(br.readLine());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+    int hr = -1, hc = -1, tr = -1, tc = -1;
+    char[] temp = curr.toCharArray();
+    for(int i = 0; i < n * m; ++i) {
+        if(temp[i] >= '0' && temp[i] <= '9') {
+            if(k == 1 && temp[i] == '0') {
+                hr = i / m;
+                hc = i % m;
+                temp[i] = '.';
             }
-            return st.nextToken();
-        }
-    
-        int nextInt() {
-            return Integer.parseInt(next());
-        }
-    
-        long nextLong() {
-            return Long.parseLong(next());
-        }
-    
-        double nextDouble() {
-            return Double.parseDouble(next());
-        }
-    
-        String nextLine() {
-            String str = "";
-            try {
-                str = br.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
+            else if((int)(temp[i] - '0') == k - 1) {
+                temp[i] = '.';
+                tr = i / m;
+                tc = i % m;
             }
-            return str;
+            else temp[i]++;
+            
+            if(temp[i] == '1') {
+                hr = i / m;
+                hc = i % m;
+            }
         }
     }
+    
+    if(hr == mr && hc == mc) {
+        out = map.get(curr);
+        break;
+    }
+    
+    for(int i = 0; i < 4; ++i) {
+        int nr = hr, nc = hc;
+        if(i == 0) nc++;
+        else if(i == 1) nr--;
+        else if(i == 2) nc--;
+        else nr++;
+        
+        if(check(nr, nc, temp) && !(k == 2 && nr == tr && nc == tc)) {
+            char old = temp[nr * m + nc];
+            temp[nr * m + nc] = '0';
+            
+            String go = new String(temp);
+            if(!map.containsKey(go)) {
+                map.put(go, map.get(curr) + 1);
+                ad.add(go);
+            }
+            
+            temp[nr * m + nc] = old;
+        }
+    }
+    
 }
