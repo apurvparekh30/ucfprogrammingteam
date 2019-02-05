@@ -1,32 +1,0 @@
-
-var ftGUID_3398543="39842F26E52FA1";
-var ftConfID_3398543="12491152";
-var ftParams_3398543="ftx=&fty=&ftadz=&ftscw=&ft_custom=21756114_2285918_230009506_106711846____ABAjH0iU8h1JN6EE-sEhV5VB72o-&ftOBA=1&ft_ifb=1&ft_domain=practice.geeksforgeeks.org&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fpractice.geeksforgeeks.org%2Fproblems%2Ftrapping-rain-water%2F0&ft_keyword=__330682__285781__128616__117098__285780__285782__342767__346067__117086__&ft_section=__330682__285781__128616__117098__285780__285782__342767__346067__117086__&cachebuster=595226.6067251286";
-var ftKeyword_3398543="";
-var ftCustom_3398543="21756114_2285918_230009506_106711846____ABAjH0iU8h1JN6EE-sEhV5VB72o-";
-var ftSection_3398543="__330682__285781__128616__117098__285780__285782__342767__346067__117086__";
-var ftSegment_3398543="u3y,v7h,wat";
-var ftSegmentList_3398543=[{s:'u3y'},{s:'v7h'},{m:'W_10035',s:'wat',t:40000000}];
-var ftRuleMatch_3398543="0";
-var ftTimestamp_3398543="1549382586";
-var ftGeoC2_3398543="us";
-var ftGeoState_3398543="fl";
-var ftGeoCity_3398543="orlando";
-var ftISP_3398543="university of central florida";
-var ftSpeed_3398543="broadband";
-var ftDMA_3398543="534";
-var ftLong_3398543="-81.2048";
-var ftLat_3398543="28.6061";
-var ftPostal_3398543="32816";
-var ftTimeZone_3398543="-500";
-var ftMobileCarrier_3398543="";
-var ftImp3398543 = {};
-ftImp3398543.privacy = "x";
-ftImp3398543.guidAge = "69";
-ftImp3398543.impID = "C766378C-4317-BF03-26EB-8E131F1F888A";
-ftImp3398543.duid = "FT:39842F26E52FA1";
-
-ftImp3398543.ft_tpplid = "";
-ftImp3398543.ft_c = {};
-
-document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/339/3398543/2514900/js/j-3398543-2514900.js" id="ftscript_m3398543" name="ftscript_m3398543"></scr'+'ipt>');
