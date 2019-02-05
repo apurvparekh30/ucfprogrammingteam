@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cisco Anthem 160x600</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="ad.size" content="width=160,height=600">
+  <link rel="stylesheet" type="text/css" media="screen" href="index_data/style.css">
+  <script type="text/javascript">
+    var clickTag = 'http://www.cisco.com';
+  </script>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+<body>
+<a href="javascript:void(window.open(window.clickTag))">
+  <div id="container">
+    <noscript>
+      <img id="backup" src="backup.jpg" alt="Cisco">
+    </noscript>
+
+    <div id="contentCntnr">
+      <h1 id="header" style="opacity: 0; display: none;">Between<br>hope<br>and<br>possible</h1>
+      <svg id="bridge" style="opacity: 0; display: none;" viewBox="0 0 101 28" width="76px" height="21px">
+        <g fill="#fff" stroke="none">
+          <path id="one" d="M4.9,16.4c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2V21c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V16.4z" style="" data-svg-origin="2.700000047683716 23.200000762939453" transform="matrix(1,0,0,1,0,0)"></path>
+          <path id="two" d="M16.9,10.4c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2V21c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V10.4z" style="" data-svg-origin="14.699999809265137 23.200000762939453" transform="matrix(1,0,0,1,0,0)"></path>
+          <path id="three" d="M28.9,2.2c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2v23.1c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V2.2z" style="" data-svg-origin="26.69999885559082 27.500001907348633" transform="matrix(1,0,0,1,0,0)"></path>
+          <path id="four" d="M40.8,10.4c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2V21c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V10.4z" style="" data-svg-origin="38.599998474121094 23.200000762939453" transform="matrix(1,0,0,1,0,0)"></path>
+          <path id="five" d="M52.8,16.4c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2V21c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V16.4z" style="" data-svg-origin="50.599998474121094 23.200000762939453" transform="matrix(1,0,0,1,0,0)"></path>
+          <path id="six" d="M64.8,10.4c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2V21c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V10.4z" style="" data-svg-origin="62.60000228881836 23.200000762939453" transform="matrix(1,0,0,1,0,0)"></path>
+          <path id="seven" d="M76.8,2.2c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2v23.1c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V2.2z" style="" data-svg-origin="74.60000610351562 27.500001907348633" transform="matrix(1,0,0,1,0,0)"></path>
+          <path id="eight" d="M88.7,10.4c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2V21c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V10.4z" style="" data-svg-origin="86.5 23.200000762939453" transform="matrix(1,0,0,1,0,0)"></path>
+          <path id="nine" d="M100.7,16.4c0-1.2-1-2.2-2.2-2.2s-2.2,1-2.2,2.2V21c0,1.2,1,2.2,2.2,2.2s2.2-1,2.2-2.2V16.4z" style="" data-svg-origin="98.5 23.200000762939453" transform="matrix(1,0,0,1,0,0)"></path>
+        </g>
+      </svg>
+      <h1 id="header1" style="opacity: 0; display: none;">there’s<br>a bridge.</h1>
+      <h1 id="header2" class="f3" style="opacity: 1;">If you can<br> imagine it,<br> we will build<br> a bridge to<br> get you there.</h1>
+      <button id="cta" class="f3" style="opacity: 1;">Watch now
+        <img id="caret" src="index_data/caret.png">
+      </button>
+    </div>
+    <div id="logoCntnr">
+      <img id="logo" src="index_data/Cisco_Logo_174x92.svg" alt="Cisco" style="transform: matrix(1, 0, 0, 1, 0, -8);">
+      <span id="subtext" class="f3" style="opacity: 1;">The bridge to possible</span>
+    </div>
+    <img id="anthem" style="opacity: 1;" src="index_data/anthem.jpg" alt="anthem">
+  </div>
+</a>
+<script src="index_data/TweenMax.js"></script>
+<script src="index_data/app.js"></script>
+
+
+</body></html>

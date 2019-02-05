@@ -1,0 +1,173 @@
+var bk_results = {
+ "campaigns": [
+  {
+    "campaign": 285780,
+    "BKUserID": "40DABYsu99eyxdNq",
+    "BluekaiAudienceName": "3+|+HHI+<$60K",
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 68,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 69,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 70,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 71,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 5731,
+     "timestamp": 1549382526
+    }
+    ]
+  },
+  {
+    "campaign": 342767,
+    "BKUserID": "40DABYsu99eyxdNq",
+    "BluekaiAudienceName": "1,+3+|+All+Marvel+Affinity",
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 408098,
+     "timestamp": 1549382586
+    },
+    {
+     "categoryID": 1141332,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 1141337,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 1320869,
+     "timestamp": 1549347803
+    }
+    ]
+  },
+  {
+    "campaign": 128616,
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 25719,
+     "timestamp": 1549347785
+    }
+    ]
+  },
+  {
+    "campaign": 285781,
+    "BKUserID": "40DABYsu99eyxdNq",
+    "BluekaiAudienceName": "3+|+HHI+$60-125K",
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 5732,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 5733,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 5734,
+     "timestamp": 1549347805
+    }
+    ]
+  },
+  {
+    "campaign": 117086,
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 5733,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 14969,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 28914,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 30781,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 408098,
+     "timestamp": 1549382586
+    }
+    ]
+  },
+  {
+    "campaign": 330682,
+    "BKUserID": "40DABYsu99eyxdNq",
+    "BluekaiAudienceName": "1,+3+|+All+Star+Wars+Affinity",
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 1141336,
+     "timestamp": 1549347805
+    }
+    ]
+  },
+  {
+    "campaign": 117098,
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 5733,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 26035,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 26037,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 28914,
+     "timestamp": 1549347805
+    },
+    {
+     "categoryID": 408098,
+     "timestamp": 1549382586
+    }
+    ]
+  },
+  {
+    "campaign": 346067,
+    "BKUUID": "1FWABshs99Y2kdNq",
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 38841,
+     "timestamp": 1549382586
+    }
+    ]
+  },
+  {
+    "campaign": 285782,
+    "BKUserID": "40DABYsu99eyxdNq",
+    "BluekaiAudienceName": "3+|+HHI+$125K++",
+    "timestamp": 1549382586,
+    "categories": [
+    {
+     "categoryID": 25052,
+     "timestamp": 1549347805
+    }
+    ]
+  }
+ ]
+};

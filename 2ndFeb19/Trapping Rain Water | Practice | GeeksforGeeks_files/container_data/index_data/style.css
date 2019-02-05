@@ -1,0 +1,215 @@
+@font-face {
+	font-family: "CiscoSansTT";
+	src: url("CiscoSansTT.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* Reset Styles */
+html, body {
+	height: 600px;
+	width: 160px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* HTML5 display reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+a, a:link, a:visited, a:focus, a:hover, a:active {
+	text-decoration: none;
+}
+
+#container {
+	background: #291c13;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-family: "CiscoSansTT", sans-serif;
+	height: 100%;
+	max-height: 600px;
+	max-width: 160px;
+	opacity: 1;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+#container::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	max-width: 100vw;
+	max-height: 100vh;
+	bottom: 0;
+	border: 1px solid black;
+	z-index: 20;
+}
+
+#container * {
+	cursor: pointer;
+}
+
+#backup {
+	height: auto;
+	left: 0;
+	max-height: none;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+	display: block;
+	/*opacity: 0.5;*/
+}
+
+#contentCntnr {
+	height: auto;
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	padding-top: 28px;
+}
+
+#header, #header1, #header2 {
+	color: #fff;
+	font-family: 'CiscoSansTT', sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 27px;
+	text-align: left;
+	letter-spacing: 0;
+	margin: 0 0 0 14px;
+}
+
+#header2 {
+	margin-top: 1px;
+}
+
+#bridge {
+	display: none;
+	position: relative;
+	width: 81px;
+	height: auto;
+	margin: 18px 0 13px 15px;
+}
+
+#cta {
+	background: rgba(0, 188, 235, .75);
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	font-family: 'CiscoSansTT', sans-serif;
+	font-weight: normal;
+	line-height: 0;
+	margin: 278px auto 0;
+	padding: 9px 16px;
+}
+
+#caret {
+	height: 9px;
+	position: relative;
+	width: auto;
+	z-index: 100;
+	top: 1px;
+	padding-left: 5px;
+}
+
+#subtext {
+	display: block;
+	color: #fff;
+	font-family: 'CiscoSansTT', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: normal;
+	text-align: center;
+}
+
+#logoCntnr {
+	height: auto;
+	position: absolute;
+	bottom: 21px;
+	width: 100%;
+	z-index: 1000;
+}
+
+#logo {
+	display: block;
+	height: 31px;
+	position: relative;
+	width: auto;
+	z-index: 100;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#anthem {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+
+/* Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	/* The easiest way to support retina is to include the images as background images, and use a retina css media query: @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {} to overwrite standard size background images, this means retina sized images will only appear on retina devices, thus keeping file size lower on standard devices. */
+	/* svgs dont need to be saved at twice size */
+}
