@@ -71,9 +71,10 @@ class cab{
 				}
 			}
 		}
-		if(ans.length()!=adj.length)  /// for dag like   .____.____.
+		if(ans.length()!=adj.length) { /// for dag like   .____.____.
 			incon = true;			  ///					  |_.__|
-
+			System.out.println("hello");
+		}
 			
 		if(incon)
 			System.out.println(1);
